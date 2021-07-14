@@ -1,7 +1,7 @@
 # SJROHRXD-SJR-homework-week-4
 JavaScript Quiz
 
-// add imagines //
+![alt text]
 
 https://sjrohrxd.github.io/SJR-homework-week-4/
 
