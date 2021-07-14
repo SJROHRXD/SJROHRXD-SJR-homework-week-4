@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJR - Coding Quiz</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<body>
+    <div class="containerBoop">
+        <div id="startQuizzz">
+            <h2>Javascript - do you know her?</h2>
+            <button id="btnBegin">Begin!</button>
+            <button id="startHS" onclick="showHighscore()">High Scores Display!</button>
+        </div>
+
+        <div id="quizBB">
+            <div id="tmrBB">Remaining Time</div>
+                <div id="qstns"><p>Questions Placeholder</p></div>
+                    <button id="btn1" onclick="checkAnswer('1')">1</button>
+                    <button id="btn2" onclick="checkAnswer('2')">2</button>
+                    <button id="btn3" onclick="checkAnswer('3')">3</button>
+                    <button id="btn4" onclick="checkAnswer('4')">4</button>
+                <div id="answr"></div>
+        </div>
+        <div id="endQ">
+            <div id="endScore"></div>
+            <input type="text" size = "40" placeholder="Enter Initials!" name="ntials" id="ntials"/>
+            <button id="submit">Submit Quiz✨</button>
+        </div>
+        <div id=hsDIBI>
+
+        <div id="hsResults">
+            <div id="scorez">
+                <h3>Initials</h3>
+                <h3>Score</h3>
+            </div>
+            <!-- dunno about this one -->
+            <div id = "hsIs"></div>
+            <div id = "okay"></div>
+        </div>
+        
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
