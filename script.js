@@ -1,22 +1,22 @@
 // TIMER VARIABLES 🌻
 var timeRem = 180;
 var timeInt;
-var quizTimer = document.getElementById("tmrBB"); //
+var quizTimer = document.getElementById("tmrBB"); 
 
 // VARIABLES - QUIZ ELs 🌷
-var startQuizzz = document.getElementById("startQuizzz"); //
-var quizBB = document.getElementById("quizBB"); //
-var qstnsEl = document.getElementById("qstns"); //
-var answrEl = document.getElementById("answr"); //
+var startQuizzz = document.getElementById("startQuizzz"); 
+var quizBB = document.getElementById("quizBB"); 
+var qstnsEl = document.getElementById("qstns"); 
+var answrEl = document.getElementById("answr"); 
 
-var endScore = document.getElementById("endScore"); //
-var endQ = document.getElementById("endQ"); //
+var endScore = document.getElementById("endScore"); 
+var endQ = document.getElementById("endQ"); 
 
-var hsDIBI = document.getElementById("hsDIBI"); //
-var ntials = document.getElementById("ntials"); //
-var hsIs = document.getElementById("hsIs"); //
-var hsResults = document.getElementById("hsResults"); //
-var okay = document.getElementById("okay"); //
+var hsDIBI = document.getElementById("hsDIBI"); 
+var ntials = document.getElementById("ntials"); 
+var hsIs = document.getElementById("hsIs"); 
+var hsResults = document.getElementById("hsResults"); 
+var okay = document.getElementById("okay"); 
 
 // VARIABLES - BUTTONS 🌼
 const btn1 = document.getElementById("btn1");
@@ -24,8 +24,8 @@ const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
 const btn4 = document.getElementById("btn4");
 
-var btnBegin = document.getElementById("btnBegin"); //
-var submitBtn = document.getElementById("submit"); //
+var btnBegin = document.getElementById("btnBegin"); 
+var submitBtn = document.getElementById("submit"); 
 
 // QUIZ:
 var quizQs = [{
@@ -115,10 +115,10 @@ submitBtn.addEventListener("click", function highscore(){
       return false;
     
     }else{
-      var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-      var currentUser = ntials.value.trim();
-      var currentHighscore = {
-          name : currentUser,
+      var saveHS = JSON.parse(localStorage.getItem("saveHS")) || [];
+      var quizUser = ntials.value.trim();
+      var currentHighScore = {
+          name : quizUser,
           score : score
         };
     
@@ -127,17 +127,17 @@ submitBtn.addEventListener("click", function highscore(){
       hsResults.style.display = "block";
       playclearBtns.style.display = "flex";
         
-      savedHighscores.push(currentHighscore);
-      localStorage.setItem("savedHighscores", JSON.stringify(savedHighscores));
-      generateHighscores();
+      saveHS.push(currentHighScore);
+      localStorage.setItem("saveHS", JSON.stringify(saveHS));
+      generateHighScore();
     }    
 });
 
 // HIGH SCORE DID I BREAK IT 🍉
-function generateHighscores(){
+function generateHighScore(){
     hsIs.innerHTML = "";
     hsResults.innerHTML = "";
-    var highscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+    var highscores = JSON.parse(localStorage.getItem("saveHS")) || [];
     for (i=0; i<highscores.length; i++){
         var newNameSpan = document.createElement("li");
         var newScoreSpan = document.createElement("li");
@@ -156,7 +156,7 @@ function showHighscore(){
     hsResults.style.display = "block";
     playclearBtns.style.display = "flex";
 
-    generateHighscores();
+    generateHighScore();
 }
 
 // DISPLAY SCORES @ END QUIZ 🍌
