@@ -28,27 +28,29 @@ var btnBegin = document.getElementById("btnBegin");
 var submitBtn = document.getElementById("submit"); 
 
 // QUIZ:
+// BIG THANKS to Z. Fast for the assist
+// win must equal answer exactly for function to run 😅
 var quizQs = [{
     question: "ECMA stands for -",
     answer1: "A. European Croissant Mastication Association",
     answer2: "B. English Computer Manufacturer's Association",
     answer3: "C. European Computer Manufacturer's Association",
     answer4: "D. Every Compiler Manufactures Anguish",
-    win: "C"},
+    win: "C. European Computer Manufacturer's Association"},
   {
     question: "What is an API?",
     answer1: "A. Appropriate Programming Interface",
     answer2: "B. Application Programming Interface",
     answer3: "C. Apple's Programming Interface",
     answer4: "D. Association of Programmer Introverts",
-    win: "B"},
+    win: "B. Application Programming Interface"},
    {
     question: "DOM means -",
     answer1: "A. Document Object Model",
     answer2: "B. It's the name of the best ACNH Jock, obviously",
     answer3: "C. Document Orientation Model",
     answer4: "D. Digital Object Model",
-    win: "A"},     
+    win: "A. Document Object Model"},     
 ];
 
 // VARIABLES - QUESTIONS, ANSWERS 🌾
