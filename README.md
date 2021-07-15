@@ -3,7 +3,7 @@ JavaScript Quiz
 
 ![alt text]
 
-https://sjrohrxd.github.io/SJR-homework-week-4/
+https://sjrohrxd.github.io/SJROHRXD-SJR-homework-week-4/
 
 ## Project Description
 
