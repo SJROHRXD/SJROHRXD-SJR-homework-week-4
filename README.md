@@ -3,7 +3,7 @@ JavaScript Quiz
 
 https://github.com/SJROHRXD/SJROHRXD-SJR-homework-week-4/blob/main/Assets/04-web-apis-homework-demo.gif
 
-![Alt Text](https://sjrohrxd.github.io/SJROHRXD-SJR-homework-week-4/)
+![Alt Text](https://raw.githubusercontent.com/SJROHRXD/SJROHRXD-SJR-homework-week-4/main/Assets/04-web-apis-homework-demo.gif)
 
 ## Project Description
 
