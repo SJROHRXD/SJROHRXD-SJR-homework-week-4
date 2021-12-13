@@ -1,9 +1,9 @@
 # SJROHRXD-SJR-homework-week-4
 JavaScript Quiz
 
-![alt text]
+https://github.com/SJROHRXD/SJROHRXD-SJR-homework-week-4/blob/main/Assets/04-web-apis-homework-demo.gif
 
-https://sjrohrxd.github.io/SJROHRXD-SJR-homework-week-4/
+![Alt Text](https://sjrohrxd.github.io/SJROHRXD-SJR-homework-week-4/)
 
 ## Project Description
 
